@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px;
+    -webkit-print-color-adjust: exact;
+    
+}
+:root{
+    --main-color:#072742;
+
+}
+a{
+    text-decoration: none;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    
+}
+@media (min-width:768px) {
+    .container{
+        width: 750px;
+    }    
+}
+@media (min-width:992px) {
+    .container{
+        width: 970px;
+    }   
+}
+@media (min-width:1200px) {
+    .container{
+        width: 1170px;
+        
+    }
+}
+/* end global */
+header{
+    background-color: var(--main-color);
+    display: flex;
+    border-radius: 30px 30px 0 0;
+}
+header .imge{
+    height: 200px;
+    border-radius: 30px;
+}
+header .imge img{
+    width: 150px;
+    height: 170px;
+    margin: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+header .text{
+    margin: 40px;
+}
+header .text h1{
+    color: white;
+}
+header .text .dit{}
+header .text .dit span{
+    margin-right: 28px;
+    color: gray;
+}
+header .text .dit span a{
+    color: gray;
+}
+
+/*  */
+.all{
+    display: grid;
+    grid-template-areas: "one one two";
+}
+.first{
+    color: var(--main-color);
+    margin-left: 40px;
+    grid-area: one;
+
+}
+.first .edu,.prof ,.sum,.projects{
+    margin: 20px 0;
+    border-bottom: 1px solid;
+}
+.first .edu h2{
+    
+    margin-bottom: 20px;
+}
+.first .edu span{
+    display: block;
+    font-weight: 700;
+}
+.first .edu span:nth-of-type(1),.first .edu span:nth-of-type(2){
+    display: inline;
+}
+.first .edu span:nth-of-type(2){
+    margin-left: 50px;
+}
+.first .edu span:nth-of-type(3){
+    color: #07274282;
+}
+.first .edu span:nth-of-type(4){
+    margin-bottom: 20px;
+}
+.first .prof{
+}
+.first .prof h2{}
+.first .prof p{
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.first .projects{}
+.first .projects h2{}
+.first .projects ul{}
+.first .projects li{
+    margin: 20px;
+}
+.first .projects li:hover a{
+    text-decoration: underline;
+    font-weight: 700;
+    
+}
+.first .projects li a{
+    color: var(--main-color);
+    
+}
+/*  */
+.second{
+    grid-area: two;
+    margin-left: 40px;
+}
+.second h2{
+    
+}
+.second .person,.skils{
+    margin: 20px 0;
+    border-bottom: 1px solid;
+}
+.second .person span{
+    display: block;
+}
+.second .person span:nth-of-type(2),
+.second .person span:nth-of-type(4),
+.second .person span:nth-of-type(6){
+    color: var(--main-color);  
+    font-weight: 700; 
+    margin-bottom: 10px;
+}
+.second .skils{}
+.second .skils .box{}
+.second  .box .prog{
+    height: 20px;
+    width: 100%;
+    background-color: #c6c6c6;
+    position: relative;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+.second .box h4{
+    margin: 5px 0;
+}
+.second  .box span{
+    height: 100%;
+    background-color: teal;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.second  span::after{
+    content: attr(data-num);
+    position: absolute;
+    top: -20px;
+    right: 0;
+    font-weight: 700;
+}
+
