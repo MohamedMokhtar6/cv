@@ -185,7 +185,9 @@ header .text .dit span a{
     right: 0;
     font-weight: 700;
 }
-@media(max-width:767px){
-    header{    width: 180%;}
+@media (max-width:768px) {
+    header{
+        width: 180%;
+    }    
 }
 
