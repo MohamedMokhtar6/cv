@@ -160,7 +160,7 @@ header .text .dit span a{
 .second .skils{}
 .second .skils .box{}
 .second  .box .prog{
-    height: 20px;
+    height: 6px;
     width: 100%;
     background-color: #c6c6c6;
     position: relative;
@@ -175,7 +175,7 @@ header .text .dit span a{
     height: 100%;
     background-color: teal;
     position: absolute;
-    border-radius: 20px;
+    border-radius: 20px
 }
 
 .second  span::after{
